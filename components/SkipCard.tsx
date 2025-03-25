@@ -52,13 +52,13 @@ const SkipCard: React.FC<SkipCardProps> = ({
             />
           ) : [8, 10].includes(size) ? (
             <img
-              src="/icons/skip-2.png"
+              src="/icons/skip-2.webp"
               alt="Medium skip"
               className="object-contain h-[150px] w-auto mx-auto rounded-[24px]"
             />
           ) : [12, 14, 16].includes(size) ? (
             <img
-              src="/icons/skip.webp"
+              src="/icons/skip-md.webp"
               alt="Large skip"
               className="object-contain h-[150px] w-auto mx-auto rounded-[24px]"
             />
