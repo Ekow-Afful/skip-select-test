@@ -18,7 +18,7 @@ export function SELECT({
   return (
     <main className="relative z-10 flex flex-col  w-full items-center justify-center ">
       {/* Skip selection grid section */}
-      <section className="flex flex-col items-center justify-center w-[80%] sm:w-[90%] md:[w-80%] gap-6">
+      <section className="flex flex-col items-center justify-center w-[80%] sm:w-[90%] md:w-[80%] gap-6">
         <div className="flex flex-col text-center">
           <h3>Choose Your Skip Size</h3>
           <p>Select the skip size that best suits your needs</p>
