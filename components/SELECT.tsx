@@ -44,7 +44,7 @@ export function SELECT({
             <div>
               <div className="flex gap-2 md:text-[18px] text-[12px]">
                 <p className="text-[#5560c3]">
-                  <span className="text-white">Skip Size:</span>{" "}
+                  <span className="text-white">Size selected:</span>{" "}
                   {selectedSkip?.size} Yards
                 </p>
                 <p className="text-[#5560c3]">
