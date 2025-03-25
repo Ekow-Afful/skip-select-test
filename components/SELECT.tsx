@@ -18,7 +18,7 @@ export function SELECT({
   return (
     <main className="relative z-10 flex flex-col  w-full items-center justify-center ">
       {/* Skip selection grid section */}
-      <section className="flex flex-col items-center justify-center w-[80%] gap-6">
+      <section className="flex flex-col items-center justify-center w-[80%] sm:w-[90%] md:[w-80%] gap-6">
         <div className="flex flex-col text-center">
           <h3>Choose Your Skip Size</h3>
           <p>Select the skip size that best suits your needs</p>
@@ -63,7 +63,7 @@ export function SELECT({
               <button
                 disabled={!selectedSkip}
                 onClick={handleContinue}
-                className={`my-6 rounded-[12px] px-4 py-2 text-white md:text-[18px] text-[13px] transition-colors hover:cursor-pointer ${
+                className={`my-6 rounded-[12px] px-4 py-2 text-white md:text-[16px] text-[13px] transition-colors hover:cursor-pointer ${
                   selectedSkip
                     ? "bg-[#6A71F3] hover:bg-[#5560c3]" // Active state
                     : "bg-gray-400 cursor-not-allowed" // Disabled state

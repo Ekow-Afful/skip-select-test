@@ -33,7 +33,7 @@ const SkipCard: React.FC<SkipCardProps> = ({
     <section onClick={onSelect} className="flex w-full cursor-pointer">
       {/* Main card container with dynamic border coloring */}
       <div
-        className={`flex flex-col gap-3 w-full transition-all duration-300 rounded-[12px] p-3 border-[1px]
+        className={`flex flex-col gap-3 w-full transition-all duration-300 rounded-[24px] p-3 border-[1px]
         ${
           isSelected
             ? "border-[#6A71F3]"
@@ -41,32 +41,32 @@ const SkipCard: React.FC<SkipCardProps> = ({
         }`}
       >
         <div className="relative w-full h-full">
-          <div className="absolute -z-10 w-full h-full bg-[#2b3e6336] rounded-[12px]"></div>
+          <div className="absolute -z-10 w-full h-full bg-[#7a45d531] rounded-[24px]"></div>
 
           {/* Dynamic image selection based on skip size */}
           {[4, 6].includes(size) ? (
             <img
               src="/icons/skip-4m.webp"
               alt="Small skip"
-              className="object-cover object-[50%_70%] h-[150px] w-auto mx-auto rounded-[12px]"
+              className="object-contain h-[150px] w-auto mx-auto rounded-[24px]"
             />
           ) : [8, 10].includes(size) ? (
             <img
               src="/icons/skip-2.png"
               alt="Medium skip"
-              className="object-cover object-[50%_70%] h-[150px] w-auto mx-auto rounded-[12px]"
+              className="object-contain h-[150px] w-auto mx-auto rounded-[24px]"
             />
           ) : [12, 14, 16].includes(size) ? (
             <img
               src="/icons/skip.webp"
               alt="Large skip"
-              className="object-cover object-[50%_70%] h-[150px] w-auto mx-auto rounded-[12px]"
+              className="object-contain h-[150px] w-auto mx-auto rounded-[24px]"
             />
           ) : (
             <img
               src="/icons/skip-lg.avif"
               alt="Extra large skip"
-              className="object-cover object-[50%_70%] h-[150px] w-auto mx-auto rounded-[12px]"
+              className="object-contain h-[150px] w-auto mx-auto rounded-[24px]"
             />
           )}
 
@@ -107,7 +107,7 @@ const SkipCard: React.FC<SkipCardProps> = ({
 
           {/* Interactive select button with hover effects */}
           <div
-            className={`group flex w-[50%] justify-center items-center gap-2 border-[1px] border-[#88868633] rounded-[12px] p-2 transition-all duration-300 
+            className={`group flex w-[50%] justify-center items-center gap-2 border-[1px] border-[#88868633] rounded-[9px] p-2 transition-all duration-300 
             ${
               isSelected
                 ? "bg-[#6A71F3]"
