@@ -14,7 +14,7 @@ This project is a web application designed to help users select the appropriate 
 
 ## Tech Stack
 
-- **React** (Functional Components & Hooks)
+- **React Router** (Functional Components & Hooks) also since create-react-app just became deprecated, I thought it best to use create-react-router which is still react
 - **TypeScript** for type safety and maintainability
 - **React Query** for data fetching, caching, and background updates
 - **Tailwind CSS** for rapid, responsive styling
@@ -38,4 +38,3 @@ This project is a web application designed to help users select the appropriate 
   - Optimized image assets by converting images to easily readable formats for browsers like webp and avif and completely reducing their sizes
   - made cards smaller and have a more rounded edge to improve the overall UI look
   - added a summary of selected skip options for easy readability by user before clicking to go to this next page
-  -
