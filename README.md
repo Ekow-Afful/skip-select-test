@@ -14,7 +14,7 @@ This project is a web application designed to help users select the appropriate 
 
 ## Tech Stack
 
-- **React Router** (Functional Components & Hooks) also since create-react-app just became deprecated, I thought it best to use create-react-router which is still react
+- **React** (Functional Components & Hooks) also since create-react-app just became deprecated, I thought it best to use create-react-router which is still react and has better performance SEO
 - **TypeScript** for type safety and maintainability
 - **React Query** for data fetching, caching, and background updates
 - **Tailwind CSS** for rapid, responsive styling
