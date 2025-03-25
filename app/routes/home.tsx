@@ -1,13 +1,19 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { SkipSelect } from "../../components/SkipSelect";
+
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+  return [{ title: "Skip Select" }, { name: "description", content: "" }];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <div className=""></div>
+      <SkipSelect />
+    </QueryClientProvider>
+  );
 }
