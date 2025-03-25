@@ -33,7 +33,7 @@ const SkipCard: React.FC<SkipCardProps> = ({
     <section onClick={onSelect} className="flex w-full cursor-pointer">
       {/* Main card container with dynamic border coloring */}
       <div
-        className={`flex flex-col gap-3 w-full transition-all duration-300 rounded-[24px] p-3 border-[1px]
+        className={`flex flex-col gap-3 w-full transition-all duration-300 rounded-[24px] p-3 border-[2px]
         ${
           isSelected
             ? "border-[#6A71F3]"
